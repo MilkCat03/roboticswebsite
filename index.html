@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html, body {
+                height: 100%;
+                scroll-snap-type: y mandatory;
+                overflow-y: scroll;
+            }
+
+            body {
+                font-family: "Silkscreen", sans-serif;
+                scroll-behavior: smooth;
+            }
+
+            section {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                scroll-snap-align: start;
+                text-align: center;
+                color: white;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            p, ul {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+
+            #titleSection {
+                background: url('group photo.jpeg') no-repeat center center/cover;
+                position: relative;
+            }
+
+            #titleSection::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            #titleSection h1 {
+                position: relative;
+                z-index: 1;
+                color: white;
+            }
+
+            #aboutUsSection {
+                background-color: #1c1c1c;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #resourcesSection {
+                background-color: #292929;
+            }
+
+            img {
+                max-width: 300px;
+                height: auto;
+                margin: 20px 0;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            #interested {
+                display: flex; 
+                justify-content: center; 
+                gap: 20px; 
+            }
+
+            #interested button {
+                width: 180px;
+                height: 50px;
+                font-size: 16px;
+                font-family: "Silkscreen", sans-serif;
+                background-color: #ff0000; 
+                color: white; 
+                border: none; 
+                cursor: pointer; 
+                border-radius: 10px; 
+            }
+
+            #interested button:hover {
+                background-color: #5e2222; 
+            }
+
+            a {
+                color: #ff6666;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            a:hover {
+                color: #ffffff;
+            }
+
+            .title{
+                font-family: "Silkscreen", sans-serif;
+            }
+
+            #outsideSection{
+                background-color:black;
+            }
+
+            #coachesSection{
+                background-color: darkred;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Title Section -->
+        <section id="titleSection">
+            <h1>Welcome to The Royal Ghost Busters</h1>
+            <div id="interested">
+                <button onclick="window.location.href = '/interested/students';">Interested Students</button>
+                <button onclick="window.location.href = '/interested/parents';">Interested Parents</button>
+                <button onclick="window.location.href = '/interested/sponsors';">Interested Sponsors</button>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="aboutUsSection">
+            <h1 class="title">About Us</h1>
+            <p>We are middle schoolers and high schoolers that go to Cannon JHS to practice robotics. Some high schools in Las Vegas do not have robotics teams; we allow those people to join our robotics team. The perfect example of this is our “mascot?” the Stay Puff Reaper, a sinister specter with a smile. We help the community with different outreach projects and we pride ourselves in keeping our word.</p>
+            <img src="reaper.jpeg" alt="Stay Puff Reaper">
+            <a href="https://firstnevada.org/all-events/#calendar">FIRST Nevada Events</a>
+            
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resourcesSection">
+            <h1 class="title">Resources</h1>
+            <ul>
+                <li><a href="/resources/fll">FIRST Lego Leauge (FLL)</a></li>
+                <li><a href="/resources/ftc">FIRST Tech Challenge (FTC)</a></li>
+                <li><a href="/resources/vexiq">Vex IQ Challenge</a></li>
+                <li><a href="/resources/documents">Documents for Robotics</a></li>
+                <li><a href="https://theroboticshivemind.org/">The Robotics Hivemind</a></li>
+                <li><a href="https://www.cannonjuniorhighschool.com/">Cannon JHS</a></li>
+            </ul>
+            <img src="puzzle.png" alt="Resources">
+        </section>
+
+        <!--whatdowedooutside section-->
+
+        <section id="outsideSection">
+            <h1 class="title">What we do outside of robotics</h1>
+            <ul>
+                <p>We volunteer our time to help our home school Cannon Jr. High School by printing t-shirts out for the staff and for the sports teams. We also volunteer for a nonprofit organization called Homeless Teens for whom we designed a patented solar powered charger for them to use in their mobile center.</p>
+                <img src="shopping cart.jpeg">
+            </ul>
+        </section>
+
+        <!--coaches section-->
+
+        <section id="coachesSection">
+            <h1 class="title">Our amazing coaches</h1>
+            <ul>
+                <div class="coach">
+                    <img src="coaches/ms chir.jpeg">
+                    <h5>Ms. Chir</h5>
+                </div>
+
+                <div class="coach">
+                    <img src="coaches/ms chir.jpeg">
+                    <h5>Ms. Chir</h5>
+                </div>
+                
+            </ul>
+        </section>
+    </body>
+</html>
