@@ -122,9 +122,82 @@
                 background-color:black;
             }
 
-            #coachesSection{
-                background-color: darkred;
+            #coachesSection {
+                background-color: darkblue;
             }
+
+            .coaches-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+                justify-items: center;
+                padding: 20px;
+            }
+
+            .coach {
+                text-align: center;
+                background-color: rgb(0, 0, 106);
+            }
+
+            .coach img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .coach h5 {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                color: white;
+            }
+
+            #captainSection {
+                background-color: #1c1c1c;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                text-align: center;
+            }
+
+            .captains-container {
+                display: flex;
+                justify-content: center; 
+                align-items: center;  
+                gap: 20px;
+                width: 100%;
+                max-width: 25%;
+            }
+
+            .captain img {
+                max-width: 30vh;
+                height:25vh;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                margin-bottom: 15px;
+            }
+
+            .captain h5 {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                color: white;
+            }
+
+            .captain h6 {
+                font-size: 1rem;
+                color: #ff6666;
+            }
+
+            .captain p {
+                font-size: 1rem;
+                color: white;
+                line-height: 1.6;
+            }
+
+
         </style>
     </head>
     <body>
@@ -172,21 +245,58 @@
         </section>
 
         <!--coaches section-->
-
         <section id="coachesSection">
             <h1 class="title">Our amazing coaches</h1>
-            <ul>
+            <div class="coaches-grid">
                 <div class="coach">
-                    <img src="coaches/ms chir.jpeg">
+                    <img src="coaches/ms chir.png" alt="Ms. Chir">
                     <h5>Ms. Chir</h5>
+                    <p>Lego First Coach</p>
+                </div>
+        
+                <div class="coach">
+                    <img src="coaches/ms tami.png" alt="Ms. Tami">
+                    <h5>Ms. Tami</h5>
+                    <p>Lego First Coach</p>
                 </div>
 
                 <div class="coach">
-                    <img src="coaches/ms chir.jpeg">
-                    <h5>Ms. Chir</h5>
+                    <img src="coaches/ms marty.png" id="marty" alt="Ms. Marty">
+                    <h5>Ms. O</h5>
+                    <p>Vex Robotics Coach</p>
                 </div>
-                
-            </ul>
+
+                <div class="coach">
+                    <img src="coaches/ms o.png" alt="Ms. O">
+                    <h5>Mrs. Marty</h5>
+                    <p>Vex Robotics Coach</p>
+                </div>
+
+                <div class="coach">
+                    <img src="coaches/G.png" alt="Mr. G">
+                    <h5>Mr. G</h5>
+                    <p>First Lego League Coach</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Captain Section -->
+        <section id="captainSection">
+            <h1 class="title">The Captains of The Royal Ghostbusters</h1>
+            <div class="captains-container">
+                <div class="captain">
+                    <img src="captians/conor.png" alt="Conor Cloutier">
+                    <h5>Conor Cloutier</h5>
+                    <h6>Captain for FTC</h6>
+                    <p>A 12th grade student who has been with The Royal Ghostbusters for 1 year. Conor specializes in computer programming and planning.</p>
+                </div>
+                <div class="captain">
+                    <img src="placeholder.png" alt="Lieannabel">
+                    <h5>Lieannabel</h5>
+                    <h6>Captain for Vex</h6>
+                    <p>A 7th grade student who has been with The Royal Ghostbusters for 2 years. Lieannabel helps with building and the engineering notebook.</p>
+                </div>
+            </div>
         </section>
     </body>
 </html>
