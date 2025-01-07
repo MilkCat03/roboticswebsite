@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
@@ -56,7 +57,6 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba(0, 0, 0, 0.5);
             }
 
             #titleSection h1 {
@@ -66,12 +66,12 @@
             }
 
             #aboutUsSection {
-                background-color: #1c1c1c;
+                background-color: rgb(24, 24, 80);
                 font-family: Arial, Helvetica, sans-serif;
             }
 
             #resourcesSection {
-                background-color: #292929;
+                background-color: rgb(24, 24, 80);
             }
 
             img {
@@ -79,7 +79,6 @@
                 height: auto;
                 margin: 20px 0;
                 border-radius: 15px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             }
 
             #interested {
@@ -119,11 +118,11 @@
             }
 
             #outsideSection{
-                background-color:black;
+                background-color:rgb(24, 24, 80);
             }
 
             #coachesSection {
-                background-color: darkblue;
+                background-color: rgb(24, 24, 80);
             }
 
             .coaches-grid {
@@ -131,7 +130,7 @@
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                 gap: 20px;
                 justify-items: center;
-                padding: 20px;
+                padding: 10px;
             }
 
             .coach {
@@ -196,7 +195,29 @@
                 color: white;
                 line-height: 1.6;
             }
+            
+            #coachesTitle{
+                font-family: "Silkscreen", sans-serif;
+            }
 
+            html {
+                overflow: scroll;
+                overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+                width: 0;
+                background: transparent;
+            }
+
+            #downArrow{
+                position:absolute;
+                right:50vh;
+                top:35vh;
+            }
+
+            #contactUs{
+                background-color: rgb(24, 24, 80);
+            }
 
         </style>
     </head>
@@ -208,6 +229,9 @@
                 <button onclick="window.location.href = '/interested/students';">Interested Students</button>
                 <button onclick="window.location.href = '/interested/parents';">Interested Parents</button>
                 <button onclick="window.location.href = '/interested/sponsors';">Interested Sponsors</button>
+                <button onclick="window.location.href = '/engineeringnotebook';">Engineering Notebook</button>
+                <h1 id="downArrow">↓</h1>
+                
             </div>
         </section>
 
@@ -246,7 +270,7 @@
 
         <!--coaches section-->
         <section id="coachesSection">
-            <h1 class="title">Our amazing coaches</h1>
+            <h1 id="coachesTitle">Our amazing coaches</h1>
             <div class="coaches-grid">
                 <div class="coach">
                     <img src="coaches/ms chir.png" alt="Ms. Chir">
@@ -296,6 +320,14 @@
                     <h6>Captain for Vex</h6>
                     <p>A 7th grade student who has been with The Royal Ghostbusters for 2 years. Lieannabel helps with building and the engineering notebook.</p>
                 </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="title">Contact Us</h1>
+            <div id="contactUs">
+                <button>Instagram</button>
+                <button>Facebook</button>
+                <button>whatever else</button>
             </div>
         </section>
     </body>
