@@ -136,11 +136,12 @@
 
             .coach {
                 text-align: center;
-                background-color: rgb(0, 0, 106);
+                background-color: #373f71;
+                border-radius: 10px;
             }
 
             .coach img {
-                max-width: 100%;
+                max-width: 90%;
                 height: auto;
                 border-radius: 15px;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -153,7 +154,7 @@
             }
 
             #captainSection {
-                background-color: #1c1c1c;
+                background-color: rgb(24, 24, 80);
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
@@ -231,19 +232,60 @@
                 border: none; 
                 cursor: pointer; 
                 border-radius: 10px;
+                background-color: #1c1c1c;
             }
 
+            .header {
+                position: absolute;
+                top: 0;
+                padding: 10px 16px;
+                width:100%;
+                background: #373f71;
+                color: #f1f1f1;
+            }
+
+            #headerButton {
+                position: absolute;
+                left: 52.5%;
+                top: 10%;
+                display: flex; 
+                width: 60%; 
+            }
+
+            #headerButton button {
+                background-color: rgb(26, 38, 70);
+                color: rgb(255, 255, 255);
+                height: 40px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                margin-left: 10px;
+            }
         </style>
     </head>
     <body>
+        <!-- header -->
+        <div class="header" id="THEheader">
+            <h2>TheRoyalGhostBusters.org</h2>
+            <div id="headerButtons">
+                <div id="headerButton">
+                    <button>Engineering Notebook</button>
+                    <button>Students</button>
+                    <button>Parents</button>
+                    <button>Sponsors</button>
+                    <button>Login</button>
+                </div>
+            </div>
+        </div>
         <!-- Title Section -->
         <section id="titleSection">
             <h1>Welcome to The Royal Ghost Busters</h1>
             <div id="interested">
-                <button onclick="window.location.href = '/interested/students';">Interested Students</button>
-                <button onclick="window.location.href = '/interested/parents';">Interested Parents</button>
-                <button onclick="window.location.href = '/interested/sponsors';">Interested Sponsors</button>
-                <button onclick="window.location.href = '/engineeringnotebook';">Engineering Notebook</button>
+                <button onclick="window.location.href = 'interested/students.html';">Interested Students</button>
+                <button onclick="window.location.href = 'interested/parents.html';">Interested Parents</button>
+                <button onclick="window.location.href = 'interested/sponsors.html';">Interested Sponsors</button>
+                <button onclick="window.location.href = 'engineeringnotebook/index.html';">Engineering Notebook</button>
                 <h1 id="downArrow">↓</h1>
                 
             </div>
