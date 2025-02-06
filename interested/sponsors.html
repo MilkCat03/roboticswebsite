@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
         <title>Interested Sponsors</title>
         <style>
+            body{
+                font-family: arial;
+            }
+
             #pictures{
                 display:flex;
                 
@@ -18,12 +26,18 @@
                 bottom:40%;
                 left:36%;
                 font-size: 50px;
+                color:white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+                font-family: "Atma", serif;
+                font-weight: 400;
+                font-style: normal;
             }
         </style>
     </head>
     <body>
         <div id="landing">
-            <img src="placeholder.png">
+            <img src="groupphoto.png">
             <h1 id="titleText">Interested Sponsers</h1>
         </div>
         <div>
@@ -32,12 +46,13 @@
         </div>
         <h1>Interested Sponsors</h1>
         <div id="communityService">
-            <p>Some people may ask, "Why should I sponsor this group?", "It is only robotics". We are not only a robotics club, we also partake in community service. We have done [something]</p>
+            <p>Some people may ask, "Why should I sponsor this group?", "It is only robotics". I personally believe that this is the coolest robotics team ever!</p>
+            
         </div>
         <div id="notebook">
             <h1>The Engineering Notebook</h1>
             <p>Our engineering notebook showcases some of our achievements and acomplishments.</p>
-            <button>Click Here</button>
+            <button onclick="window.location.href = 'engineeringnotebook/index.html';">Click Here</button>
         </div>
     </body>
 </html>

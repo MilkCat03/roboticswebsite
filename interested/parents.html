@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Interested Sponsors</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Interested Parents</title>
         <style>
+            body{
+                font-family: arial;
+            }
+
             #pictures{
-                display:flex;  
+                position: absolute;
+                display: flex;
+                margin: 0;
+                padding: 0;                  
             }
 
             #landing img{
@@ -17,44 +28,32 @@
                 bottom:40%;
                 left:36%;
                 font-size: 50px;
+                color:white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+                font-family: "Atma", serif;
+                font-weight: 400;
+                font-style: normal;
             }
 
             body{
-                background-color: black;
-                color:white;
+                background-color: white;
+                color: black;
             }
         </style>
     </head>
     <body>
         <div id="landing">
-            <img src="placeholder.png">
-            <h1 id="titleText">Interested Sponsers</h1>
+            <img src="groupphoto.png">
+            <h1 id="titleText">Interested Parents</h1>
         </div>
-        <h1>Interested Sponsors</h1>
+        <h1>Interested Parents</h1>
         <div id="communityService">
             <p>Our robotics team is one of the best in the school districts. </p>
-            <div id="pictures">
-                <div class="communityPicture">
-                    <img src="placeholder.png">
-                    <h1>Community Service Image</h1>
-                </div>
-                <div class="communityPicture">
-                    <img src="placeholder.png">
-                    <h1>Community Service Image</h1>
-                </div>
-                <div class="communityPicture">
-                    <img src="placeholder.png">
-                    <h1>Community Service Image</h1>
-                </div>
-                <div class="communityPicture">
-                    <img src="placeholder.png">
-                    <h1>Community Service Image</h1>
-                </div>
-            </div>
             <div id="notebook">
                 <h1>The Engineering Notebook</h1>
                 <p>Our engineering notebook showcases some of our achievements and acomplishments.</p>
-                <button>Click Here</button>
+                <button onclick="window.location.href = 'engineeringnotebook/index.html';">Click Here</button>
             </div>
         </div>
     </body>
