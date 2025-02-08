@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
@@ -412,5 +411,19 @@
                 <li><a href="mailto:chirla@nv.ccsd.net">chirla@nv.ccsd.net</a></li>
             </ul>
         </section>
+
+        <script>
+            var hasTouchScreen = false;
+
+            var UA = navigator.userAgent;
+                    hasTouchScreen = (
+                        /\b(BlackBerry|webOS|iPhone|IEMobile)\b/i.test(UA) ||
+                        /\b(Android|Windows Phone|iPad|iPod)\b/i.test(UA)
+                    ); 
+
+            if (hasTouchScreen) {
+                window.location.href = "https://m.theroyalghostbusters.org";
+            }
+        </script>
     </body>
 </html>
