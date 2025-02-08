@@ -137,7 +137,7 @@
 
             .coach {
                 text-align: center;
-                background-color: #373f71;
+                background-color: rgb(24, 24, 80);
                 border-radius: 10px;
             }
 
@@ -151,7 +151,6 @@
             .coach h5 {
                 margin-top: 10px;
                 font-size: 1.2rem;
-                color: white;
             }
 
             #captainSection {
@@ -229,7 +228,7 @@
                 height: 50px;
                 font-size: 16px;
                 font-family: "Silkscreen", sans-serif;
-                background-color: #ff0000; 
+                background-color: #ff6666; 
                 color: white; 
                 border: none; 
                 cursor: pointer; 
@@ -249,25 +248,46 @@
 
             #headerButton {
                 position: absolute;
-                left: 52.5%;
+                left: 58%;
                 top: 10%;
                 display: flex; 
                 width: 60%; 
             }
 
+            #headerButton button:hover{
+                background-color: rgb(255, 40, 40);;
+            }
+
             #headerButton button {
-                background-color: rgb(26, 38, 70);
+                background-color: rgb(255, 85, 85);
+                color: rgb(255, 255, 255);
+                height: 10%;
+                padding: 1% 2%;
+                border: none;
+                border-radius: 10px;
+                font-size: 100%;
+                margin-left: 1%;
+                margin-top: 0.5%; 
+            }
+
+            #whatwedobutton{
+                background-color: rgb(255, 85, 85);
                 color: rgb(255, 255, 255);
                 height: 40px;
                 padding: 10px 20px;
                 border: none;
                 border-radius: 10px;
                 font-size: 18px;
-                margin-left: 10px;
+            }
+
+            .coach p{
+                color: #ff6666;
             }
         </style>
     </head>
     <body>
+        <!--haha im a web designer-->
+
         <!-- header -->
         <div class="header" id="THEheader">
             <h2>TheRoyalGhostBusters.org</h2>
@@ -277,7 +297,7 @@
                     <button onclick="window.location.href = 'interested/students.html';">Students</button>
                     <button onclick="window.location.href = 'interested/parents.html';">Parents</button>
                     <button onclick="window.location.href = 'interested/sponsors.html';">Sponsors</button>
-                    <button>Login</button>
+                    <button onclick="window.location.href = 'https://theroboticshivemind.org/wp-login.php?redirect_to=https%3A%2F%2Ftheroboticshivemind.org%2F'">Login</button>
                 </div>
             </div>
         </div>
@@ -325,7 +345,7 @@
                 <p>We volunteer our time to help our home school Cannon Jr. High School by printing t-shirts out for the staff and for the sports teams. We also volunteer for a nonprofit organization called Homeless Teens for whom we designed a patented solar powered charger for them to use in their mobile center.</p>
                 <img src="shopping cart.jpeg">
             </ul>
-            <button>Our Commumity Service</button>
+            <button id="whatwedobutton" onclick="window.location.href = 'engineeringnotebook/';">Our Commumity Service</button>
         </section>
 
         <!--coaches section-->
